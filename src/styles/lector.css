@@ -12,7 +12,7 @@ body.tema-espacio-profundo { background: linear-gradient(180deg, #05060F 0%, #2A
   -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(242, 166, 90, .25);
 }
-.barra__titulo { font-family: var(--font-title); font-weight: 700; color: var(--marte); margin-left: 6px; }
+.barra__titulo { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-title); font-weight: 700; color: var(--marte); margin-left: 6px; }
 html:not(.js) .solo-js { display: none !important; }
 @media (max-width: 620px) {
   .barra__titulo, .chip-btn__texto { display: none; }

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Earth Trace">
+  <defs>
+    <clipPath id="et-globo"><circle cx="60" cy="68" r="38"/></clipPath>
+  </defs>
+  <!-- Anillo partido -->
+  <circle cx="60" cy="68" r="51" fill="none" stroke="#F6E7CB" stroke-width="3.6" stroke-linecap="round" stroke-dasharray="84 12 104 14 76 30" transform="rotate(-62 60 68)"/>
+  <!-- Globo -->
+  <circle cx="60" cy="68" r="38" fill="#12406E"/>
+  <g clip-path="url(#et-globo)">
+    <path d="M84 30 A38 38 0 0 1 84 106 A44 44 0 0 0 84 30 Z" fill="#1F78B4"/>
+    <circle cx="98" cy="68" r="38" fill="#1F78B4" opacity=".9"/>
+    <circle cx="60" cy="68" r="34" fill="#12406E"/>
+    <path d="M74 32 Q88 36 94 48 Q86 42 76 40 Z" fill="#4FB8D8"/>
+    <!-- Norteamérica -->
+    <path d="M30 44 Q38 34 52 34 Q60 34 64 40 Q60 44 62 48 Q56 50 54 56 Q50 54 46 60 Q44 66 50 68 L46 72 Q38 66 34 58 Q28 52 30 44 Z" fill="#7FA83A"/>
+    <path d="M58 32 Q64 30 68 34 Q64 38 58 36 Z" fill="#7FA83A"/>
+    <!-- Centroamérica y Sudamérica -->
+    <path d="M50 70 Q54 72 56 76 Q62 76 68 80 Q74 86 70 94 Q66 100 62 106 L58 108 Q58 98 56 92 Q50 86 52 80 Q48 76 50 70 Z" fill="#7FA83A"/>
+  </g>
+  <!-- Órbita: una sola pasada por delante, de la cola (izquierda) al cohete -->
+  <path d="M2 68 A58 14 0 0 0 118 68" fill="none" stroke="#F08A35" stroke-width="6" stroke-linecap="round" transform="rotate(-22 60 68)"/>
+  <!-- Estela y cohete -->
+  <path d="M74 50 L92 34" stroke="#F08A35" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(100 26) rotate(45)">
+    <path d="M-4 9 L0 19 L4 9 Z" fill="#F08A35"/>
+    <path d="M-7 2 L-13 11 L-7 9 Z M7 2 L13 11 L7 9 Z" fill="#F08A35"/>
+    <path d="M0 -19 Q9 -10 7 9 H-7 Q-9 -10 0 -19 Z" fill="#F6E7CB"/>
+    <path d="M0 -19 Q6 -14 7 -9 H-7 Q-6 -14 0 -19 Z" fill="#F08A35"/>
+    <circle cx="0" cy="-2" r="3.2" fill="#170E3A"/>
+  </g>
+  <!-- Estrella -->
+  <path d="M20 18 Q21.6 27 30 28.5 Q21.6 30 20 39 Q18.4 30 10 28.5 Q18.4 27 20 18 Z" fill="#F5A33A"/>
+</svg>

@@ -28,7 +28,7 @@
   position: absolute; left: clamp(16px, 5vw, 64px); top: clamp(64px, 12vh, 120px);
   max-width: min(30rem, 86vw); z-index: 5;
 }
-.hero__kicker { margin: 0; color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 14px; }
+.hero__kicker { margin: 10px 0 6px; color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 14px; }
 .hero__titulo {
   margin: 4px 0 8px; font-family: var(--font-title); font-weight: 800;
   font-size: clamp(32px, 6vw, 64px); line-height: 1.05;

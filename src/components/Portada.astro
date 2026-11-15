@@ -1,4 +1,5 @@
 ---
+import Logo from "./Logo.astro";
 // Portada en capas (RF-01), menús de Luna y Marte (RF-02) y punto Pioneer (RF-03).
 // Sin JavaScript: los cuerpos son enlaces al catálogo de abajo, que lista todas las historias.
 import "../styles/portada.css";
@@ -47,8 +48,8 @@ const capa2 = estrellas(40, 1.8);
     </div>
 
     <div class="hero">
+      <h1 id="titulo-sitio" class="hero__titulo"><Logo /></h1>
       <p class="hero__kicker">{tx.heroKicker}</p>
-      <h1 id="titulo-sitio" class="hero__titulo">{tx.siteTitle}</h1>
       <p class="hero__pista">{tx.heroHint}</p>
     </div>
 

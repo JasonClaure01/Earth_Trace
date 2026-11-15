@@ -1,4 +1,4 @@
-# Viaje al espacio profundo · Journey to Deep Space
+# Earth Trace
 
 Cómics cortos y animados sobre misiones espaciales, en español e inglés. Sitio estático hecho con Astro.
 

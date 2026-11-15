@@ -4,7 +4,7 @@ export type Lang = (typeof LANGS)[number];
 export const DEFAULT_LANG: Lang = "es";
 
 const es = {
-  siteTitle: "Viaje al espacio profundo",
+  siteTitle: "Earth Trace",
   siteDescription: "Cómics cortos y animados sobre misiones espaciales reales, para escolares.",
   skip: "Saltar al contenido",
   langName: "Español",
@@ -41,7 +41,7 @@ const es = {
 };
 
 const en: typeof es = {
-  siteTitle: "Journey to Deep Space",
+  siteTitle: "Earth Trace",
   siteDescription: "Short animated comics about real space missions, for schoolchildren.",
   skip: "Skip to content",
   langName: "English",

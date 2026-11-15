@@ -1,0 +1,19 @@
+---
+// Logo de Earth Trace: emblema (public/logo.svg, fuente única) + nombre en texto HTML (accesible y nítido).
+// variante "hero": emblema y nombre grandes (portada). "barra": solo el emblema pequeño (cabecera del lector).
+import marca from "../../public/logo.svg?raw";
+
+interface Props { variante?: "hero" | "barra" }
+const { variante = "hero" } = Astro.props;
+
+// El texto da el nombre accesible; el emblema es decorativo. Id de recorte único por variante.
+const svg = marca
+  .replace(/role="img" aria-label="[^"]*"/, 'aria-hidden="true" focusable="false"')
+  .replaceAll("et-globo", `et-globo-${variante}`);
+---
+<span class={`logo logo--${variante}`}>
+  <span class="logo__marca" set:html={svg} />
+  {variante === "hero" && (
+    <span class="logo__texto"><span class="logo__earth">Earth</span> <span class="logo__trace">Trace</span></span>
+  )}
+</span>

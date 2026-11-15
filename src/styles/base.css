@@ -91,3 +91,18 @@ button { font: inherit; color: inherit; }
   padding: 32px 16px 40px; text-align: center; color: var(--ink-soft); font-size: 15px;
 }
 .pie p { margin: 4px auto; max-width: 60ch; }
+
+/* ---------- Logo Earth Trace ---------- */
+.logo { display: inline-flex; align-items: center; gap: .35em; }
+.logo__marca { display: block; flex: none; }
+.logo__marca svg { display: block; width: 100%; height: auto; max-width: none; }
+.logo--hero .logo__marca { width: clamp(84px, 11vw, 136px); }
+.logo--barra .logo__marca { width: 30px; }
+.logo__texto {
+  display: flex; flex-direction: column;
+  font-family: "Arial Black", "Segoe UI Black", var(--font-title); font-weight: 900; font-style: italic;
+  text-transform: uppercase; letter-spacing: .01em; line-height: .95;
+  font-size: clamp(38px, 6.2vw, 68px);
+}
+.logo__earth { color: #F6E7CB; }
+.logo__trace { color: #F08A35; padding-bottom: .1em; border-bottom: .07em solid #F6E7CB; }
