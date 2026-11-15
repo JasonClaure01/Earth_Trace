@@ -1,0 +1,21 @@
+/* Tarjeta de historia (menús, catálogo y cierre). */
+.lista-tarjetas, .menu ul, .catalogo ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+/* Tarjeta de historia (CA-02.3: área ≥ 44 × 44 px) */
+.tarjeta {
+  display: grid; grid-template-columns: 56px 1fr auto; align-items: center; gap: 12px;
+  min-height: 64px; padding: 8px 12px 8px 8px; border-radius: 12px;
+  color: var(--ink); text-decoration: none; background: rgba(255, 255, 255, .06);
+  border: 2px solid transparent;
+}
+a.tarjeta:hover, a.tarjeta:focus-visible { background: rgba(110, 195, 255, .16); border-color: var(--accent); }
+.tarjeta--pronto { opacity: .62; cursor: default; }
+.miniatura { width: 56px; height: 56px; border-radius: 10px; }
+.tarjeta__texto { display: grid; line-height: 1.25; }
+.tarjeta__sub { font-size: 13px; color: var(--ink-soft); font-weight: 600; }
+.tarjeta__titulo { font-size: 16px; font-weight: 700; }
+.tarjeta__pronto { font-size: 12px; color: #FFE066; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+.tarjeta__anio {
+  font-size: 13px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: rgba(255, 224, 102, .16); color: #FFE066;
+}
+

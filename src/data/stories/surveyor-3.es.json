@@ -1,0 +1,95 @@
+{
+  "paginas": ["Rumbo a la Luna", "¡Contacto lunar!", "Un legado en la Luna"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "Surveyor 3 sobre un soporte en un laboratorio, junto a una consola con pantallas y botones.",
+      "textos": [
+        { "texto": "1967. Antes de enviar astronautas, la NASA necesitaba saber cómo era el suelo de la Luna." },
+        { "quien": "Surveyor 3", "texto": "¿Será duro o blando el suelo lunar?" }
+      ]
+    },
+    "p1-v2": {
+      "alt": "Un cohete despega junto a una torre de lanzamiento naranja, rodeado de nubes de humo.",
+      "textos": [
+        { "texto": "17 de abril de 1967. Surveyor 3 despega desde Florida a bordo de un cohete Atlas-Centaur." }
+      ]
+    },
+    "p1-v3": {
+      "alt": "Surveyor 3 viaja por el espacio siguiendo una línea de puntos desde la Tierra hasta la Luna.",
+      "textos": [
+        { "texto": "Su misión: posarse con suavidad, tomar fotos y estudiar el suelo lunar." },
+        { "quien": "Surveyor 3", "texto": "¡La Luna está cada vez más cerca!" }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Surveyor 3 desciende sobre el suelo gris de la Luna con el motor encendido y levanta polvo.",
+      "textos": [
+        { "texto": "Tres días después, descendía hacia el Océano de las Tormentas…" },
+        { "quien": "Surveyor 3", "texto": "¡Encendiendo los frenos!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "Tres imágenes de Surveyor 3 unidas por flechas en arco: la nave rebota dos veces sobre el suelo lunar.",
+      "textos": [
+        { "texto": "20 de abril de 1967. Al tocar el suelo, sus motores siguieron encendidos: ¡rebotó dos veces antes de quedarse quieto!" },
+        { "quien": "Surveyor 3", "texto": "¡Boing! ¡Boing!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "Surveyor 3, ya quieto en la Luna, envía ondas de radio a la Tierra, que sonríe en el cielo.",
+      "textos": [
+        { "texto": "¡Por fin, en reposo! Desde la Tierra, el equipo comprobó que todo funcionaba." },
+        { "quien": "Surveyor 3", "texto": "¡Aquí Surveyor 3: todo bien!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Surveyor 3 de cerca, junto a una foto del paisaje lunar con montañas y cráteres.",
+      "textos": [
+        { "texto": "Su cámara empezó a enviar fotos del paisaje lunar." },
+        { "quien": "Surveyor 3", "texto": "¡Clic, clic!" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "El brazo con pala de Surveyor 3 cava una zanja en el suelo lunar.",
+      "textos": [
+        { "texto": "Su pala mecánica cavó zanjas para ver lo firme que era el suelo. ¡Lo bastante para que se posaran naves con astronautas!" },
+        { "quien": "Surveyor 3", "texto": "¡El suelo aguanta!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Surveyor 3 envía ondas de radio y pequeñas fotos que vuelan hacia la Tierra.",
+      "textos": [
+        { "texto": "Surveyor 3 envió 6.315 fotos a la Tierra. Con ellas conocimos mucho mejor el suelo lunar." }
+      ]
+    },
+    "p3-v2": {
+      "alt": "Surveyor 3, con cara de sueño, en la oscuridad de la noche lunar; en el cielo se ve la Tierra como un fino arco.",
+      "textos": [
+        { "texto": "4 de mayo de 1967: su última comunicación. Había llegado la noche lunar, que dura unas dos semanas. Sin luz del Sol, se apagó." },
+        { "quien": "Surveyor 3", "texto": "Buenas noches, Tierra…" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "Dos astronautas junto a Surveyor 3: uno arrodillado y otro saludando; al fondo, el módulo lunar.",
+      "textos": [
+        { "texto": "Noviembre de 1969. Pete Conrad y Alan Bean, del Apollo 12, se posaron cerca y fueron a visitarlo." },
+        { "quien": "Astronauta", "texto": "¡Hola, Surveyor! ¡Por fin te encontramos!" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "Un astronauta lleva en las manos la cámara de Surveyor 3; la nave sigue en la Luna y la Tierra saluda.",
+      "textos": [
+        { "texto": "Se llevaron su cámara y otras piezas para estudiarlas en la Tierra. Surveyor 3 sigue en la Luna: sus datos ayudaron a preparar la llegada de los astronautas." },
+        { "quien": "Astronauta", "texto": "¡Esta cámara vuelve a casa!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "El Apollo 12 se posó a unos 180 metros de Surveyor 3: ¡un aterrizaje de precisión! Los astronautas lo visitaron unos dos años y medio después de su llegada.",
+    "preguntaAula": "¿Por qué crees que la NASA envió robots a la Luna antes que a personas?",
+    "fuentes": [
+      { "titulo": "NASA: misión Surveyor 3", "url": "https://science.nasa.gov/mission/surveyor-3/" },
+      { "titulo": "NASA: misión Apollo 12", "url": "https://www.nasa.gov/mission/apollo-12/" }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+---
+import "../styles/base.css";
+import { t, otherLang, type Lang } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  /** Ruta equivalente en el otro idioma. */
+  alternate: string;
+  /** Ruta de esta página (para hreflang). */
+  path: string;
+  bodyClass?: string;
+  themeColor?: string;
+}
+const { lang, title, description, alternate, path, bodyClass = "", themeColor = "#0B1026" } = Astro.props;
+const tx = t(lang);
+const other = otherLang(lang);
+const hrefs = { [lang]: path, [other]: alternate } as Record<Lang, string>;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description ?? tx.siteDescription} />
+    <meta name="theme-color" content={themeColor} />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" hreflang="es" href={hrefs.es} />
+    <link rel="alternate" hreflang="en" href={hrefs.en} />
+    <link rel="alternate" hreflang="x-default" href={hrefs.es} />
+    <!-- Preferencias locales (sin cookies): se aplican antes de pintar para evitar parpadeos. -->
+    <script is:inline>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add("js");
+        try {
+          var p = JSON.parse(localStorage.getItem("vep-prefs") || "{}");
+          if (p.sencilla) d.classList.add("lectura-sencilla", "sin-anim");
+          if (p.sinAnim) d.classList.add("sin-anim");
+        } catch (e) {}
+        if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("sin-anim", "movimiento-reducido");
+      })();
+    </script>
+  </head>
+  <body class={bodyClass}>
+    <a class="skip-link" href="#contenido">{tx.skip}</a>
+    <slot />
+    <script>
+      import "../scripts/prefs.ts";
+    </script>
+  </body>
+</html>

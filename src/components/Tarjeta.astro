@@ -1,0 +1,31 @@
+---
+// Tarjeta de historia (menús de la portada y catálogo). RF-02: título, chip de año y miniatura.
+import "../styles/tarjeta.css";
+import { t, type Lang } from "../i18n/ui";
+import { urlHistoria, type Entrada } from "../data/catalog";
+import Miniatura from "./Miniatura.astro";
+
+interface Props { lang: Lang; h: Entrada; enMenu?: boolean }
+const { lang, h, enMenu = false } = Astro.props;
+const tx = t(lang);
+---
+{h.disponible ? (
+  <a class="tarjeta" href={urlHistoria(lang, h)} data-menu-item={enMenu ? "" : undefined}>
+    <Miniatura h={h} />
+    <span class="tarjeta__texto">
+      <span class="tarjeta__sub">{h.subtitulo[lang]}</span>
+      <span class="tarjeta__titulo">{h.titulo[lang]}</span>
+    </span>
+    <span class="tarjeta__anio">{h.anio}</span>
+  </a>
+) : (
+  <span class="tarjeta tarjeta--pronto" aria-disabled="true" tabindex={enMenu ? "-1" : undefined} data-menu-item={enMenu ? "" : undefined}>
+    <Miniatura h={h} />
+    <span class="tarjeta__texto">
+      <span class="tarjeta__sub">{h.subtitulo[lang]}</span>
+      <span class="tarjeta__titulo">{h.titulo[lang]}</span>
+      <span class="tarjeta__pronto">{tx.comingSoon}</span>
+    </span>
+    <span class="tarjeta__anio">{h.anio}</span>
+  </span>
+)}

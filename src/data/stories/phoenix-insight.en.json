@@ -1,0 +1,100 @@
+{
+  "paginas": ["Arriving on the Red Planet", "Listening to the Planet", "Two Missions, One Discovery"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "The Phoenix lander drifts down under a striped parachute over the icy plains of northern Mars.",
+      "textos": [
+        { "texto": "May 2008. The Phoenix lander arrives in the Martian Arctic to study its frozen ground." },
+        { "quien": "Phoenix", "texto": "Hello, Mars! It's so cold here!" }
+      ]
+    },
+    "p1-v2": {
+      "alt": "Phoenix on the ground with its two round solar panels open and its robotic arm ready.",
+      "textos": [
+        { "texto": "Phoenix opened its two round solar panels and got its robotic arm ready to dig." },
+        { "quien": "Phoenix", "texto": "Ready to work!" }
+      ]
+    },
+    "p1-v3": {
+      "alt": "Phoenix's arm digs a trench in the ground and uncovers bright white chunks.",
+      "textos": [
+        { "texto": "Its arm dug a shallow trench and found something white and shiny under the dust." },
+        { "quien": "Phoenix", "texto": "What's that white stuff?" }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Two photos of the same trench: the first shows small white chunks and in the second they are almost gone. Earth smiles.",
+      "textos": [
+        { "texto": "Days later, several white chunks were gone: they had turned into vapor. It was water ice!" },
+        { "quien": "Earth", "texto": "Confirmed! There's water ice under the Martian ground." },
+        { "texto": "First day" },
+        { "texto": "Days later" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "The InSight lander parachutes down toward a smooth, reddish plain on Mars.",
+      "textos": [
+        { "texto": "November 2018. Ten years later another lander arrives: InSight. Its mission is to study the inside of Mars." },
+        { "quien": "InSight", "texto": "Hello, Mars! I came to listen to your insides." }
+      ]
+    },
+    "p2-v2": {
+      "alt": "With its robotic arm, InSight places a white dome on the ground; a cable connects it to the lander.",
+      "textos": [
+        { "texto": "With its arm, InSight set a seismometer on the ground and covered it with a protective dome." },
+        { "quien": "InSight", "texto": "Shhh… I'm listening!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Waves from a quake travel up from underground to InSight, which shakes on the surface.",
+      "textos": [
+        { "texto": "InSight recorded more than 1,300 quakes on Mars. They're called marsquakes!" },
+        { "quien": "InSight", "texto": "Mars is shaking! I can feel it!" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "A cutaway of Mars shows its layers: a thin crust, a thick mantle and a large core at the center.",
+      "textos": [
+        { "texto": "Waves from the marsquakes showed what Mars is like inside: a crust, a mantle and a large liquid core." },
+        { "texto": "Crust" },
+        { "texto": "Mantle" },
+        { "texto": "Core" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "A tired-looking Phoenix covered in frost under a gray winter sky while snow falls.",
+      "textos": [
+        { "texto": "Phoenix worked for about five months. Then winter came: there was less and less sunlight, and in November 2008 it stopped communicating." }
+      ]
+    },
+    "p3-v2": {
+      "alt": "A tired-looking InSight with its solar panels covered in reddish dust.",
+      "textos": [
+        { "texto": "Dust slowly covered InSight's solar panels. After 4 years of work, it sent its last message in December 2022." },
+        { "quien": "InSight", "texto": "I have very little energy left…" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "Phoenix on the icy ground next to chunks of ice, and InSight on the red ground next to some waves.",
+      "textos": [
+        { "quien": "Phoenix", "texto": "I found water ice under the ground." },
+        { "quien": "InSight", "texto": "And I heard how Mars shakes inside!" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "A smiling Earth waves at Mars, where tiny Phoenix and InSight can be seen.",
+      "textos": [
+        { "texto": "Phoenix and InSight taught us that Mars hides secrets beneath its surface: water ice and an interior that still shakes." },
+        { "quien": "Earth", "texto": "Thank you, explorers!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "InSight detected more than 1,300 marsquakes. The strongest one, in May 2022, had a magnitude of 4.7.",
+    "preguntaAula": "Why do you think it is important to know whether there is water ice on Mars?",
+    "fuentes": [
+      { "titulo": "NASA: Phoenix mission", "url": "https://science.nasa.gov/mission/phoenix/" },
+      { "titulo": "NASA: InSight mission", "url": "https://science.nasa.gov/mission/insight/" }
+    ]
+  }
+}

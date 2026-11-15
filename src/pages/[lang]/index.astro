@@ -1,0 +1,16 @@
+---
+import Base from "../../layouts/Base.astro";
+import Portada from "../../components/Portada.astro";
+import { LANGS, t, otherLang, type Lang } from "../../i18n/ui";
+import { validarCatalogo } from "../../lib/stories";
+
+export function getStaticPaths() {
+  validarCatalogo();
+  return LANGS.map(lang => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const tx = t(lang);
+---
+<Base lang={lang} title={tx.siteTitle} path={`/${lang}/`} alternate={`/${otherLang(lang)}/`}>
+  <Portada lang={lang} />
+</Base>

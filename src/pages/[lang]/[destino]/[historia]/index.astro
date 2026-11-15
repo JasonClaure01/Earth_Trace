@@ -1,0 +1,32 @@
+---
+import Base from "../../../../layouts/Base.astro";
+import Lector from "../../../../components/Lector.astro";
+import { LANGS, t, otherLang, type Lang } from "../../../../i18n/ui";
+import { HISTORIAS, destino, urlHistoria } from "../../../../data/catalog";
+import { validarCatalogo } from "../../../../lib/stories";
+
+export function getStaticPaths() {
+  validarCatalogo();
+  return HISTORIAS.filter(h => h.disponible).flatMap(h =>
+    LANGS.map(lang => ({
+      params: { lang, destino: destino(h.destino).slug[lang], historia: h.id },
+      props: { id: h.id },
+    })),
+  );
+}
+
+const lang = Astro.params.lang as Lang;
+const { id } = Astro.props;
+const h = HISTORIAS.find(x => x.id === id)!;
+const tx = t(lang);
+---
+<Base
+  lang={lang}
+  title={`${h.subtitulo[lang]}: ${h.titulo[lang]} · ${tx.siteTitle}`}
+  path={urlHistoria(lang, h)}
+  alternate={urlHistoria(otherLang(lang), h)}
+  bodyClass={`tema-${h.destino}`}
+  themeColor="#2A120C"
+>
+  <Lector lang={lang} id={id} />
+</Base>

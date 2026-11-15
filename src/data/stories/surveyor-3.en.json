@@ -1,0 +1,95 @@
+{
+  "paginas": ["Heading to the Moon", "Lunar Contact!", "A Legacy on the Moon"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "Surveyor 3 on a stand in a laboratory, next to a console with screens and buttons.",
+      "textos": [
+        { "texto": "1967. Before sending astronauts, NASA needed to know what the Moon's ground was like." },
+        { "quien": "Surveyor 3", "texto": "Will the lunar ground be hard or soft?" }
+      ]
+    },
+    "p1-v2": {
+      "alt": "A rocket lifts off next to an orange launch tower, surrounded by clouds of smoke.",
+      "textos": [
+        { "texto": "April 17, 1967. Surveyor 3 lifts off from Florida aboard an Atlas-Centaur rocket." }
+      ]
+    },
+    "p1-v3": {
+      "alt": "Surveyor 3 travels through space along a dotted line from Earth to the Moon.",
+      "textos": [
+        { "texto": "Its mission: land gently, take photos and study the lunar ground." },
+        { "quien": "Surveyor 3", "texto": "The Moon is getting closer and closer!" }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Surveyor 3 descends over the gray lunar ground with its engine firing, kicking up dust.",
+      "textos": [
+        { "texto": "Three days later, it was descending toward the Ocean of Storms…" },
+        { "quien": "Surveyor 3", "texto": "Firing my brakes!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "Three images of Surveyor 3 joined by curved arrows: the spacecraft bounces twice on the lunar ground.",
+      "textos": [
+        { "texto": "April 20, 1967. When it touched down, its engines kept firing: it bounced twice before coming to a stop!" },
+        { "quien": "Surveyor 3", "texto": "Boing! Boing!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "Surveyor 3, now still on the Moon, sends radio waves to a smiling Earth in the sky.",
+      "textos": [
+        { "texto": "At last, at rest! From Earth, the team checked that everything was working." },
+        { "quien": "Surveyor 3", "texto": "Surveyor 3 here: all good!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "A close-up of Surveyor 3 next to a photo of the lunar landscape with mountains and craters.",
+      "textos": [
+        { "texto": "Its camera began sending photos of the lunar landscape." },
+        { "quien": "Surveyor 3", "texto": "Click, click!" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "Surveyor 3's arm with a scoop digs a trench in the lunar ground.",
+      "textos": [
+        { "texto": "Its mechanical scoop dug trenches to test how firm the ground was. Firm enough for spacecraft with astronauts to land!" },
+        { "quien": "Surveyor 3", "texto": "The ground holds up!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Surveyor 3 sends radio waves and small photos flying toward Earth.",
+      "textos": [
+        { "texto": "Surveyor 3 sent 6,315 photos to Earth. They helped us learn much more about the lunar ground." }
+      ]
+    },
+    "p3-v2": {
+      "alt": "A sleepy Surveyor 3 in the darkness of the lunar night; Earth appears in the sky as a thin crescent.",
+      "textos": [
+        { "texto": "May 4, 1967: its last communication. The lunar night had begun, and it lasts about two weeks. Without sunlight, it shut down." },
+        { "quien": "Surveyor 3", "texto": "Good night, Earth…" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "Two astronauts next to Surveyor 3: one kneeling and one waving; the lunar module stands in the background.",
+      "textos": [
+        { "texto": "November 1969. Pete Conrad and Alan Bean, of Apollo 12, landed nearby and went to visit it." },
+        { "quien": "Astronaut", "texto": "Hello, Surveyor! We finally found you!" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "An astronaut carries Surveyor 3's camera; the spacecraft remains on the Moon and Earth waves.",
+      "textos": [
+        { "texto": "They took its camera and other parts back to Earth to study them. Surveyor 3 is still on the Moon: its data helped prepare for astronauts to land." },
+        { "quien": "Astronaut", "texto": "This camera is going home!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "Apollo 12 landed about 180 meters from Surveyor 3: a precision landing! The astronauts visited it about two and a half years after it arrived.",
+    "preguntaAula": "Why do you think NASA sent robots to the Moon before people?",
+    "fuentes": [
+      { "titulo": "NASA: Surveyor 3 mission", "url": "https://science.nasa.gov/mission/surveyor-3/" },
+      { "titulo": "NASA: Apollo 12 mission", "url": "https://www.nasa.gov/mission/apollo-12/" }
+    ]
+  }
+}

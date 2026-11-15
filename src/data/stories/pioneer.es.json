@@ -1,0 +1,97 @@
+{
+  "paginas": ["Abriendo camino", "Más lejos que nadie", "Silencio y estrellas"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "Un cohete despega con una gran llama sobre nubes de humo, bajo un cielo azul oscuro.",
+      "textos": [
+        { "texto": "En 1972 despegó Pioneer 10, la primera misión hacia los planetas exteriores. Estaba pensada para durar solo 21 meses." }
+      ]
+    },
+    "p1-v2": {
+      "alt": "La sonda Pioneer 10, con su gran antena blanca, avanza entre asteroides de todos los tamaños.",
+      "textos": [
+        { "texto": "Nadie sabía si una nave podría cruzar el cinturón de asteroides. Pioneer 10 fue la primera en intentarlo." },
+        { "quien": "Pioneer 10", "texto": "Respira hondo… ¡allá voy!" }
+      ]
+    },
+    "p1-v3": {
+      "alt": "Pioneer 10 pasa junto a Júpiter, un planeta enorme con bandas de colores y la Gran Mancha Roja.",
+      "textos": [
+        { "texto": "En diciembre de 1973 pasó a unos 130.000 km de Júpiter y envió fotos de detalles como la Gran Mancha Roja." },
+        { "quien": "Pioneer 10", "texto": "¡Mira eso! Nadie había estado tan cerca." }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Pioneer 11, de color lila, sale de la Tierra dejando una estela; a lo lejos la espera Pioneer 10.",
+      "textos": [
+        { "texto": "En 1973, cuando Pioneer 10 ya había cruzado el cinturón de asteroides, despegó su gemela: Pioneer 11." },
+        { "quien": "Pioneer 11", "texto": "¡Tú abriste el camino! Yo iré más allá: hasta Saturno." },
+        { "quien": "Pioneer 10", "texto": "¡Buen viaje, hermana!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "Pioneer 11 vuela cerca de Saturno y sus anillos.",
+      "textos": [
+        { "texto": "En 1979, Pioneer 11 tomó las primeras fotos cercanas de Saturno. Pasó a unos 21.000 km del planeta." },
+        { "quien": "Pioneer 11", "texto": "¡Los anillos son aún más bonitos de cerca!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "Una placa dorada rectangular con dibujos grabados: dos personas, la silueta de la sonda, un mapa de estrellas y el Sol con sus planetas.",
+      "textos": [
+        { "texto": "Cada sonda llevaba una placa de metal con un mensaje para quien la encontrara: quiénes la enviaron y desde dónde." }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Pioneer 10 cruza la línea de la órbita de Neptuno, el planeta azul, dejando atrás las órbitas de los demás planetas.",
+      "textos": [
+        { "texto": "En 1983, Pioneer 10 cruzó la órbita de Neptuno, que entonces era el planeta más lejano. Fue el primer objeto humano en llegar tan lejos." },
+        { "texto": "Neptuno" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "La sonda Voyager 1 adelanta a toda velocidad a Pioneer 10.",
+      "textos": [
+        { "texto": "Durante muchos años, Pioneer 10 fue el objeto humano más lejano. En 1998, la Voyager 1, más rápida, la superó." },
+        { "quien": "Pioneer 10", "texto": "¡Adelante, Voyager! Demostramos que se podía llegar lejos." },
+        { "quien": "Voyager 1", "texto": "¡Gracias por abrir el camino, Pioneer!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Pioneer 10, muy pequeña y lejos, envía ondas de radio que se van apagando antes de llegar a la Tierra.",
+      "textos": [
+        { "texto": "Pioneer 11 envió su última señal en 1995. Pioneer 10 envió la suya el 23 de enero de 2003, desde más de 12.000 millones de kilómetros: ¡tardó más de 11 horas en llegar!" }
+      ]
+    },
+    "p3-v2": {
+      "alt": "Pioneer 10, con cara de cansancio, junto a un medidor de energía cuya aguja marca el rojo.",
+      "textos": [
+        { "texto": "Su fuente de energía se fue debilitando hasta que no pudo alimentar el transmisor. Las sondas quedaron en silencio." },
+        { "quien": "Pioneer 10", "texto": "Ya no puedo hablar… pero sigo mi camino." }
+      ]
+    },
+    "p3-v3": {
+      "alt": "Dos líneas de puntos salen del Sol: una lleva a Pioneer 10 hacia una estrella rojiza y otra lleva a Pioneer 11 hacia un grupo de estrellas.",
+      "textos": [
+        { "texto": "Pioneer 10 viaja hacia la estrella Aldebarán: tardará más de 2 millones de años en llegar. Pioneer 11 va hacia la constelación del Águila y pasará cerca de una de sus estrellas en unos 4 millones de años." },
+        { "texto": "Aldebarán" },
+        { "texto": "Águila" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "Pioneer 10 viaja frente a la Vía Láctea; junto a ella brilla la placa dorada con el mensaje.",
+      "textos": [
+        { "texto": "Ya no envían señales, pero siguen viajando con un mensaje de la Tierra." },
+        { "texto": "El silencio no es el final: es el camino." }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "La última señal de Pioneer 10 tardó más de 11 horas en llegar a la Tierra, ¡y eso que viajaba a la velocidad de la luz!",
+    "preguntaAula": "Si tuvieras que dibujar un mensaje para alguien de otro planeta, ¿qué pondrías?",
+    "fuentes": [
+      { "titulo": "NASA: misión Pioneer 10", "url": "https://science.nasa.gov/mission/pioneer-10/" },
+      { "titulo": "NASA: misión Pioneer 11", "url": "https://science.nasa.gov/mission/pioneer-11/" }
+    ]
+  }
+}

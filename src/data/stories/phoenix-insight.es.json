@@ -1,0 +1,100 @@
+{
+  "paginas": ["Llegada al planeta rojo", "Escuchar al planeta", "Dos misiones, un descubrimiento"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "La sonda Phoenix baja con un paracaídas de rayas sobre las llanuras heladas del norte de Marte.",
+      "textos": [
+        { "texto": "Mayo de 2008. La sonda Phoenix llega al Ártico de Marte para estudiar su suelo helado." },
+        { "quien": "Phoenix", "texto": "¡Hola, Marte! ¡Qué frío hace aquí!" }
+      ]
+    },
+    "p1-v2": {
+      "alt": "Phoenix, ya en el suelo, con sus dos paneles solares redondos abiertos y el brazo robótico preparado.",
+      "textos": [
+        { "texto": "Phoenix abrió sus dos paneles solares redondos y preparó su brazo robótico para cavar." },
+        { "quien": "Phoenix", "texto": "¡Listo para trabajar!" }
+      ]
+    },
+    "p1-v3": {
+      "alt": "El brazo de Phoenix cava una zanja en el suelo y deja al descubierto trozos blancos y brillantes.",
+      "textos": [
+        { "texto": "Su brazo cavó una zanja poco profunda y encontró algo blanco y brillante bajo el polvo." },
+        { "quien": "Phoenix", "texto": "¿Qué es eso tan blanco?" }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Dos fotos de la misma zanja: en la primera hay trocitos blancos y en la segunda casi han desaparecido. La Tierra sonríe.",
+      "textos": [
+        { "texto": "Días después, varios trocitos blancos habían desaparecido: se convirtieron en vapor. ¡Era hielo de agua!" },
+        { "quien": "La Tierra", "texto": "¡Confirmado! Hay hielo de agua bajo el suelo de Marte." },
+        { "texto": "Primer día" },
+        { "texto": "Días después" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "La sonda InSight desciende en paracaídas hacia una llanura rojiza y lisa de Marte.",
+      "textos": [
+        { "texto": "Noviembre de 2018. Diez años después llega otra sonda: InSight. Su misión es estudiar el interior de Marte." },
+        { "quien": "InSight", "texto": "¡Hola, Marte! Vengo a escucharte por dentro." }
+      ]
+    },
+    "p2-v2": {
+      "alt": "Con su brazo robótico, InSight coloca una cúpula blanca sobre el suelo; un cable la une a la sonda.",
+      "textos": [
+        { "texto": "Con su brazo, InSight colocó un sismómetro sobre el suelo y lo tapó con una cúpula protectora." },
+        { "quien": "InSight", "texto": "Shhh… ¡estoy escuchando!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Las ondas de un sismo suben desde el subsuelo hasta InSight, que tiembla sobre la superficie.",
+      "textos": [
+        { "texto": "InSight registró más de 1.300 sismos en Marte. ¡Son los martemotos!" },
+        { "quien": "InSight", "texto": "¡Marte tiembla! ¡Lo noto!" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "Un corte de Marte muestra sus capas: una corteza delgada, un manto grueso y un gran núcleo en el centro.",
+      "textos": [
+        { "texto": "Las ondas de los martemotos revelaron cómo es Marte por dentro: una corteza, un manto y un gran núcleo líquido." },
+        { "texto": "Corteza" },
+        { "texto": "Manto" },
+        { "texto": "Núcleo" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Phoenix, con cara de cansancio, cubierto de escarcha bajo un cielo gris de invierno mientras nieva.",
+      "textos": [
+        { "texto": "Phoenix trabajó unos cinco meses. Luego llegó el invierno: cada vez había menos luz del Sol y, en noviembre de 2008, dejó de comunicarse." }
+      ]
+    },
+    "p3-v2": {
+      "alt": "InSight, con cara de cansancio, tiene los paneles solares cubiertos de polvo rojizo.",
+      "textos": [
+        { "texto": "El polvo fue tapando los paneles de InSight. Tras 4 años de trabajo, envió su último mensaje en diciembre de 2022." },
+        { "quien": "InSight", "texto": "Tengo muy poca energía…" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "Phoenix sobre el suelo helado junto a trozos de hielo, e InSight sobre el suelo rojo junto a unas ondas.",
+      "textos": [
+        { "quien": "Phoenix", "texto": "Yo encontré hielo de agua bajo el suelo." },
+        { "quien": "InSight", "texto": "¡Y yo escuché cómo tiembla Marte por dentro!" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "La Tierra, con carita sonriente, saluda a Marte, donde se ven Phoenix e InSight muy pequeños.",
+      "textos": [
+        { "texto": "Phoenix e InSight nos enseñaron que Marte guarda secretos bajo su superficie: hielo de agua y un interior que todavía tiembla." },
+        { "quien": "La Tierra", "texto": "¡Gracias, exploradores!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "InSight detectó más de 1.300 martemotos. El más fuerte, en mayo de 2022, tuvo una magnitud de 4,7.",
+    "preguntaAula": "¿Por qué crees que es importante saber si hay hielo de agua en Marte?",
+    "fuentes": [
+      { "titulo": "NASA: misión Phoenix", "url": "https://science.nasa.gov/mission/phoenix/" },
+      { "titulo": "NASA: misión InSight", "url": "https://science.nasa.gov/mission/insight/" }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+---
+// Portada en capas (RF-01), menús de Luna y Marte (RF-02) y punto Pioneer (RF-03).
+// Sin JavaScript: los cuerpos son enlaces al catálogo de abajo, que lista todas las historias.
+import "../styles/portada.css";
+import { t, otherLang, type Lang } from "../i18n/ui";
+import { DESTINOS, historiasDe, urlHistoria, historia } from "../data/catalog";
+import Tarjeta from "./Tarjeta.astro";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tx = t(lang);
+const other = otherLang(lang);
+const luna = DESTINOS[0], marte = DESTINOS[1], profundo = DESTINOS[2];
+const pioneer = historia("pioneer")!;
+const pioneerHref = pioneer.disponible ? urlHistoria(lang, pioneer) : "#lista-espacio-profundo";
+
+// campo de estrellas determinista
+let seed = 11;
+const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+const estrellas = (n: number, rmax: number) =>
+  Array.from({ length: n }, () => ({ x: (rnd() * 100).toFixed(2), y: (rnd() * 100).toFixed(2), r: (0.4 + rnd() * rmax).toFixed(2), o: (0.35 + rnd() * 0.65).toFixed(2) }));
+const capa1 = estrellas(110, 1.0);
+const capa2 = estrellas(40, 1.8);
+---
+<header class="barra barra--portada">
+  <span class="barra__spacer"></span>
+  <a class="chip-btn" href={`/${other}/`} hreflang={other} lang={other} data-lang-switch>
+    <span aria-hidden="true">{tx.otherLangShort}</span><span class="sr-only">{tx.switchLang}</span>
+  </a>
+  <button class="chip-btn" type="button" data-pref="sencilla" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"/></svg>
+    <span>{tx.simpleReading}</span>
+  </button>
+</header>
+
+<main id="contenido">
+  <section class="escena" aria-labelledby="titulo-sitio" data-escena>
+    <div class="capa" style="--f:.1" aria-hidden="true">
+      <svg class="estrellas">
+        {capa1.map(s => <circle cx={`${s.x}%`} cy={`${s.y}%`} r={s.r} fill="#FFFFFF" opacity={s.o} />)}
+      </svg>
+    </div>
+    <div class="capa" style="--f:.14" aria-hidden="true">
+      <svg class="estrellas estrellas--cerca">
+        {capa2.map(s => <circle cx={`${s.x}%`} cy={`${s.y}%`} r={s.r} fill="#DDE8FF" opacity={s.o} />)}
+      </svg>
+    </div>
+
+    <div class="hero">
+      <p class="hero__kicker">{tx.heroKicker}</p>
+      <h1 id="titulo-sitio" class="hero__titulo">{tx.siteTitle}</h1>
+      <p class="hero__pista">{tx.heroHint}</p>
+    </div>
+
+    <!-- Punto Pioneer (factor .05) -->
+    <div class="capa" style="--f:.05">
+      <svg class="trayectoria" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M70 31 Q80 20 88 14" fill="none" stroke="#B8A9FF" stroke-width="1.5" stroke-dasharray="2 3" vector-effect="non-scaling-stroke" />
+      </svg>
+      <a class="pioneer" href={pioneerHref} data-pioneer>
+        <span class="pioneer__punto" aria-hidden="true"></span>
+        <span class="pioneer__etiqueta">{tx.pioneerLabel}{!pioneer.disponible && <small> · {tx.comingSoon}</small>}</span>
+      </a>
+    </div>
+
+    <!-- Marte (factor .25) -->
+    <div class="capa" style="--f:.25">
+      <div class="destino destino--marte" data-destino>
+        <a class="cuerpo cuerpo--marte" href="#lista-marte" aria-controls="menu-marte" data-cuerpo>
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <radialGradient id="g-marte" cx="38%" cy="35%" r="70%">
+                <stop offset="0" stop-color="#F7B27A" /><stop offset=".55" stop-color="#D2622A" /><stop offset="1" stop-color="#7A2A10" />
+              </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="48" fill="url(#g-marte)" />
+            <path d="M20 46 C30 40 42 44 48 52 C40 58 28 58 20 46 Z M58 30 C66 28 74 34 72 40 C66 42 60 38 58 30 Z M54 66 C62 62 74 66 76 72 C68 78 58 74 54 66 Z" fill="#9A3A16" opacity=".55" />
+            <path d="M36 6 C44 3 56 3 64 6 C58 10 42 10 36 6 Z" fill="#FFF4EA" opacity=".9" />
+          </svg>
+          <span class="cuerpo__nombre">{marte.nombre[lang].replace(/^la /, "")}</span>
+          <span class="sr-only">— {tx.openMenu(marte.nombre[lang])}</span>
+        </a>
+        <div class="menu" id="menu-marte" data-menu hidden>
+          <p class="menu__titulo">{tx.openMenu(marte.nombre[lang])}</p>
+          <ul>{historiasDe("marte").map(h => <li><Tarjeta lang={lang} h={h} enMenu /></li>)}</ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luna (factor .5) -->
+    <div class="capa" style="--f:.5">
+      <div class="destino destino--luna" data-destino>
+        <a class="cuerpo cuerpo--luna" href="#lista-luna" aria-controls="menu-luna" data-cuerpo>
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <radialGradient id="g-luna" cx="36%" cy="34%" r="72%">
+                <stop offset="0" stop-color="#F3EFE6" /><stop offset=".6" stop-color="#C9CCD6" /><stop offset="1" stop-color="#6E7383" />
+              </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="48" fill="url(#g-luna)" />
+            <g fill="#9EA3B2" opacity=".6">
+              <circle cx="34" cy="38" r="9" /><circle cx="62" cy="30" r="5" /><circle cx="58" cy="62" r="11" /><circle cx="30" cy="68" r="5" /><circle cx="76" cy="50" r="4" />
+            </g>
+            <g fill="#FFFFFF" opacity=".35"><circle cx="32" cy="36" r="6" /><circle cx="56" cy="59" r="7" /></g>
+          </svg>
+          <span class="cuerpo__nombre">{luna.nombre[lang].replace(/^(la|the) /i, "")}</span>
+          <span class="sr-only">— {tx.openMenu(luna.nombre[lang])}</span>
+        </a>
+        <div class="menu" id="menu-luna" data-menu hidden>
+          <p class="menu__titulo">{tx.openMenu(luna.nombre[lang])}</p>
+          <ul>{historiasDe("luna").map(h => <li><Tarjeta lang={lang} h={h} enMenu /></li>)}</ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tierra (factor 1): casquete de un círculo que cabe entero en el viewBox; se escala por ancho,
+         así el borde siempre se ve redondeado (antes "slice" recortaba la parte superior). -->
+    <div class="capa capa--tierra" style="--f:1" aria-hidden="true">
+      <svg viewBox="0 0 1000 200">
+        <defs>
+          <radialGradient id="g-atm" cx="500" cy="1700" r="1680" gradientUnits="userSpaceOnUse">
+            <stop offset=".955" stop-color="#6EC3FF" stop-opacity=".6" /><stop offset="1" stop-color="#6EC3FF" stop-opacity="0" />
+          </radialGradient>
+          <linearGradient id="g-tierra" x1="0" y1="80" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4E93C2" /><stop offset="1" stop-color="#1B3F73" />
+          </linearGradient>
+          <clipPath id="clip-tierra"><circle cx="500" cy="1700" r="1620" /></clipPath>
+        </defs>
+        <circle cx="500" cy="1700" r="1680" fill="url(#g-atm)" />
+        <circle cx="500" cy="1700" r="1620" fill="url(#g-tierra)" />
+        <g clip-path="url(#clip-tierra)">
+          <path d="M90 160 C170 112 290 112 340 140 C310 176 210 196 120 200 Z M610 104 C690 92 790 108 830 136 C760 160 660 150 610 104 Z" fill="#5E9E58" opacity=".85" />
+          <path d="M400 96 C450 88 520 90 570 98" fill="none" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="7" stroke-linecap="round" />
+        </g>
+        <circle cx="500" cy="1700" r="1620" fill="none" stroke="#9FD8FF" stroke-opacity=".7" stroke-width="3" />
+      </svg>
+    </div>
+  </section>
+
+  <section class="catalogo" id="historias" aria-labelledby="titulo-catalogo">
+    <h2 id="titulo-catalogo">{tx.allStories}</h2>
+    {DESTINOS.map(d => (
+      <section class="catalogo__grupo" aria-labelledby={`lista-${d.id}`} style={`--color:${d.color}`}>
+        <h3 id={`lista-${d.id}`}>{d.nombre[lang].charAt(0).toUpperCase() + d.nombre[lang].slice(1)}</h3>
+        <ul>{historiasDe(d.id).map(h => <li><Tarjeta lang={lang} h={h} /></li>)}</ul>
+      </section>
+    ))}
+  </section>
+</main>
+
+<footer class="pie">
+  <p>{tx.disclaimer}</p>
+  <p>{tx.footerPrivacy}</p>
+  <p>{tx.footerNasa}</p>
+</footer>
+
+<script>
+  import "../scripts/portada.ts";
+</script>

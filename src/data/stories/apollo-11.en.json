@@ -1,0 +1,94 @@
+{
+  "paginas": ["Heading into History", "The First Step", "Coming Home"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "Three astronauts in spacesuits, one waving, in front of a window showing a rocket.",
+      "textos": [
+        { "texto": "July 1969. Neil Armstrong, Buzz Aldrin and Michael Collins get ready to travel to the Moon." }
+      ]
+    },
+    "p1-v2": {
+      "alt": "The giant Saturn V rocket lifts off next to its launch tower, among clouds of smoke.",
+      "textos": [
+        { "texto": "July 16. The giant Saturn V rocket lifts off from Kennedy Space Center, in Florida." }
+      ]
+    },
+    "p1-v3": {
+      "alt": "The Columbia spacecraft, joined to the Eagle lunar module, travels from Earth to the Moon along a dotted orbit.",
+      "textos": [
+        { "texto": "Their goal: take people to the Moon and bring them home safely. On July 19 they enter lunar orbit." }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Columbia stays in space while the Eagle lander heads down to the lunar surface with its engine firing.",
+      "textos": [
+        { "texto": "July 20. Armstrong and Aldrin head down to the Moon in the Eagle lander. Collins stays in orbit aboard Columbia." },
+        { "quien": "Columbia", "texto": "Good luck, Eagle! I'll wait for you here." },
+        { "quien": "Eagle", "texto": "Here we go!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "The Eagle descends with its engine firing over a rocky area; an arrow points to a clearer spot.",
+      "textos": [
+        { "texto": "On the way down, they saw they were heading for a rocky area. Armstrong took control and found a safer spot." },
+        { "quien": "Eagle", "texto": "I'm running low on fuel!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "A smiling Eagle sits on the gray lunar ground; Earth can be seen in the sky.",
+      "textos": [
+        { "texto": "July 20, 1969. The Eagle touched down in the Sea of Tranquility!" },
+        { "quien": "Eagle", "texto": "The Eagle has landed!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "An astronaut next to the lunar module's ladder; on the right, a boot print in the ground.",
+      "textos": [
+        { "texto": "Hours later, Neil Armstrong climbed down the ladder and became the first human to walk on the Moon." },
+        { "quien": "Neil Armstrong", "texto": "That's one small step for a man, one giant leap for mankind." }
+      ]
+    },
+    "p2-v4": {
+      "alt": "One astronaut holds a camera and another kneels to collect samples, next to two instruments with the Eagle behind; in a circle, Columbia in orbit.",
+      "textos": [
+        { "texto": "Buzz Aldrin joined him. Together they took photos, collected samples and set up instruments: a seismometer and a mirror for measuring the distance to Earth with lasers." },
+        { "texto": "Meanwhile, Collins kept circling the Moon aboard Columbia." }
+      ]
+    },
+    "p3-v1": {
+      "alt": "The top part of the Eagle lifts off on a flame; the bottom part stays on the lunar ground.",
+      "textos": [
+        { "texto": "July 21. Armstrong and Aldrin lifted off in the top part of the Eagle. The bottom part stayed on the Moon." },
+        { "quien": "Eagle", "texto": "See you later, Moon!" }
+      ]
+    },
+    "p3-v2": {
+      "alt": "The Eagle docks with the nose of Columbia above the Moon.",
+      "textos": [
+        { "texto": "They rejoined Collins in Columbia and moved the samples over: 21.5 kilograms of lunar rocks and soil!" },
+        { "quien": "Columbia", "texto": "Welcome back!" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "The capsule enters Earth's atmosphere, leaving a trail of fire.",
+      "textos": [
+        { "texto": "After two and a half days of travel, they reached Earth. As it entered the atmosphere, the capsule got extremely hot: it looked like a fireball!" },
+        { "quien": "Columbia", "texto": "Phew, it's hot!" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "The capsule floats in the sea under three striped parachutes; a ship and a rescue helicopter are nearby.",
+      "textos": [
+        { "texto": "July 24. Columbia splashed down in the Pacific Ocean. All three astronauts came home safely!" },
+        { "texto": "SPLASH!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "After returning, the astronauts spent more than two weeks in quarantine in case they had brought microbes from the Moon. Neil Armstrong celebrated his 39th birthday there, on August 5, 1969!",
+    "preguntaAula": "What do you think was the hardest part of traveling to the Moon and back?",
+    "fuentes": [
+      { "titulo": "NASA: Apollo 11 mission", "url": "https://www.nasa.gov/mission/apollo-11/" }
+    ]
+  }
+}

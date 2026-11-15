@@ -1,0 +1,97 @@
+{
+  "paginas": ["Blazing the Trail", "Farther Than Anyone", "Silence and Stars"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "A rocket lifts off on a big flame above clouds of smoke, under a dark blue sky.",
+      "textos": [
+        { "texto": "In 1972, Pioneer 10 lifted off: the first mission to the outer planets. It was designed to last only 21 months." }
+      ]
+    },
+    "p1-v2": {
+      "alt": "The Pioneer 10 probe, with its big white antenna, moves between asteroids of all sizes.",
+      "textos": [
+        { "texto": "No one knew if a spacecraft could cross the asteroid belt. Pioneer 10 was the first to try." },
+        { "quien": "Pioneer 10", "texto": "Deep breath… here I go!" }
+      ]
+    },
+    "p1-v3": {
+      "alt": "Pioneer 10 flies past Jupiter, a huge planet with colored bands and the Great Red Spot.",
+      "textos": [
+        { "texto": "In December 1973, it flew about 130,000 km from Jupiter and sent photos of details like the Great Red Spot." },
+        { "quien": "Pioneer 10", "texto": "Look at that! No one had been this close." }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Lilac-colored Pioneer 11 leaves Earth with a trail behind it; Pioneer 10 waits in the distance.",
+      "textos": [
+        { "texto": "In 1973, when Pioneer 10 had already crossed the asteroid belt, its twin lifted off: Pioneer 11." },
+        { "quien": "Pioneer 11", "texto": "You opened the way! I'll go even farther: to Saturn." },
+        { "quien": "Pioneer 10", "texto": "Safe travels, sister!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "Pioneer 11 flies close to Saturn and its rings.",
+      "textos": [
+        { "texto": "In 1979, Pioneer 11 took the first close-up photos of Saturn. It passed about 21,000 km from the planet." },
+        { "quien": "Pioneer 11", "texto": "The rings are even prettier up close!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "A rectangular golden plaque with engraved drawings: two people, the outline of the probe, a star map and the Sun with its planets.",
+      "textos": [
+        { "texto": "Each probe carried a metal plaque with a message for whoever finds it: who sent it and where it came from." }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Pioneer 10 crosses the line of Neptune's orbit, the blue planet, leaving the other planets' orbits behind.",
+      "textos": [
+        { "texto": "In 1983, Pioneer 10 crossed the orbit of Neptune, which was then the farthest planet. It was the first human-made object to go that far." },
+        { "texto": "Neptune" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "The Voyager 1 probe speeds past Pioneer 10.",
+      "textos": [
+        { "texto": "For many years, Pioneer 10 was the most distant human-made object. In 1998, the faster Voyager 1 overtook it." },
+        { "quien": "Pioneer 10", "texto": "Go ahead, Voyager! We showed it could be done." },
+        { "quien": "Voyager 1", "texto": "Thanks for leading the way, Pioneer!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "A tiny, distant Pioneer 10 sends radio waves that fade before reaching Earth.",
+      "textos": [
+        { "texto": "Pioneer 11 sent its last signal in 1995. Pioneer 10 sent its own on January 23, 2003, from more than 12 billion kilometers away: it took over 11 hours to arrive!" }
+      ]
+    },
+    "p3-v2": {
+      "alt": "A tired-looking Pioneer 10 next to an energy gauge whose needle points to red.",
+      "textos": [
+        { "texto": "Their power source grew weaker until it could no longer run the transmitter. The probes fell silent." },
+        { "quien": "Pioneer 10", "texto": "I can't talk anymore… but I'm still on my way." }
+      ]
+    },
+    "p3-v3": {
+      "alt": "Two dotted lines leave the Sun: one takes Pioneer 10 toward a reddish star and the other takes Pioneer 11 toward a group of stars.",
+      "textos": [
+        { "texto": "Pioneer 10 is traveling toward the star Aldebaran: it will take more than 2 million years to get there. Pioneer 11 is heading toward the constellation Aquila and will pass near one of its stars in about 4 million years." },
+        { "texto": "Aldebaran" },
+        { "texto": "Aquila" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "Pioneer 10 travels in front of the Milky Way; the golden plaque with the message shines beside it.",
+      "textos": [
+        { "texto": "They no longer send signals, but they keep traveling with a message from Earth." },
+        { "texto": "Silence is not the end: it is the journey." }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "Pioneer 10's last signal took more than 11 hours to reach Earth, even though it traveled at the speed of light!",
+    "preguntaAula": "If you had to draw a message for someone on another planet, what would you put on it?",
+    "fuentes": [
+      { "titulo": "NASA: Pioneer 10 mission", "url": "https://science.nasa.gov/mission/pioneer-10/" },
+      { "titulo": "NASA: Pioneer 11 mission", "url": "https://science.nasa.gov/mission/pioneer-11/" }
+    ]
+  }
+}

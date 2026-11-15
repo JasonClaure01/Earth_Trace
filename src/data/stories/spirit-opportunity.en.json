@@ -1,0 +1,76 @@
+{
+  "paginas": ["The Great Journey", "Two Explorers, Two Missions", "A Legacy on Mars"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "Two rockets lift off from Earth into space; a rover travels inside each one.",
+      "textos": [{ "texto": "The year is 2003. NASA launches twin missions to explore Mars. Spirit and Opportunity begin their long journey." }]
+    },
+    "p1-v2": {
+      "alt": "Spirit, with orange details, and Opportunity, with teal details, smile at each other inside the spacecraft.",
+      "textos": [
+        { "quien": "Spirit", "texto": "Hi, brother! I'm so excited to reach Mars." },
+        { "quien": "Opportunity", "texto": "Me too, Spirit! We're going to discover so much." }
+      ]
+    },
+    "p1-v3": {
+      "alt": "A probe descends by parachute over Mars while a cluster of airbags bounces on the ground.",
+      "textos": [{ "texto": "January 2004. Each rover arrived wrapped in airbags that bounced across the ground until they came to a stop." }]
+    },
+    "p1-v4": {
+      "alt": "The two happy rovers on the red ground of Mars, with mountains behind them.",
+      "textos": [
+        { "quien": "Spirit", "texto": "We made it! We're on Mars!" },
+        { "quien": "Opportunity", "texto": "Look how red everything is! Let's explore!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "Opportunity's robotic arm examines a layered rock; a magnifying glass shows the layers up close.",
+      "textos": [{ "texto": "Opportunity found layered rocks and tiny hematite spheres: clues that there was water here long ago." }]
+    },
+    "p2-v2": {
+      "alt": "Spirit in the distance and Opportunity in the foreground, each in a different part of Mars.",
+      "textos": [
+        { "quien": "Spirit", "texto": "I'm in Gusev Crater, on the other side of Mars." },
+        { "quien": "Opportunity", "texto": "And I'm still looking for signs of water!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "A dust devil spins behind Spirit, whose solar panels are covered in dust.",
+      "textos": [{ "quien": "Spirit", "texto": "Phew, so much dust! My solar panels are dirty and I have less energy." }]
+    },
+    "p2-v4": {
+      "alt": "A calendar with many crossed-out days next to the two rovers on Mars.",
+      "textos": [
+        { "texto": "The mission was planned to last about 90 Martian days. Spirit worked for more than 6 years, and Opportunity for more than 14!" },
+        { "texto": "YEARS!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Spirit, with its wheels sunk in the sand, thinks about Earth.",
+      "textos": [{ "texto": "In 2009, Spirit got stuck in soft sand. It kept studying the ground without moving until its last signal, in 2010." }]
+    },
+    "p3-v2": {
+      "alt": "Opportunity, alone, on a field of rippled dunes.",
+      "textos": [{ "quien": "Opportunity", "texto": "I'll miss you, Spirit. I'll keep exploring for both of us." }]
+    },
+    "p3-v3": {
+      "alt": "A dust storm darkens the sky; Opportunity can barely be seen.",
+      "textos": [{ "texto": "In 2018, a dust storm covered the whole planet. Without sunlight, Opportunity ran out of power and stopped communicating." }]
+    },
+    "p3-v4": {
+      "alt": "Spirit and Opportunity under a starry sky; Earth waves at them from above and there is a plaque on the ground.",
+      "textos": [
+        { "texto": "Thanks to Spirit and Opportunity, we know Mars had water long ago. Their legacy lives on in the new explorers." },
+        { "texto": "Spirit · Opportunity" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "Opportunity traveled more than 45 kilometers (28 miles) on Mars: farther than a marathon.",
+    "preguntaAula": "Why do you think the rovers worked so much longer than planned?",
+    "fuentes": [
+      { "titulo": "NASA: Opportunity mission", "url": "https://science.nasa.gov/mission/mer-opportunity/" },
+      { "titulo": "NASA: Spirit mission", "url": "https://science.nasa.gov/mission/mer-spirit/" }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "paginas": ["A Very Special Passenger", "The First Flight", "A Record-Breaking Explorer"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "The Perseverance rover and the little Ingenuity helicopter travel together through space toward Mars.",
+      "textos": [
+        { "texto": "July 2020. The Perseverance rover launches toward Mars. It carries a passenger hidden under its belly: the Ingenuity helicopter." },
+        { "quien": "Ingenuity", "texto": "How exciting! We're going to Mars!" }
+      ]
+    },
+    "p1-v2": {
+      "alt": "Two jars of air: Earth's is full of little balls and Mars's is almost empty. Ingenuity looks at them from below.",
+      "textos": [
+        { "texto": "Flying on Mars is very hard: its air is about 100 times thinner than Earth's." },
+        { "quien": "Ingenuity", "texto": "There's hardly any air to push!" },
+        { "texto": "Earth" },
+        { "texto": "Mars" }
+      ]
+    },
+    "p1-v3": {
+      "alt": "A close-up of Ingenuity: two rotors, one above the other, with arrows showing they spin in opposite directions; a scale stands next to it.",
+      "textos": [
+        { "texto": "That's why Ingenuity is very light and its two rotors spin in opposite directions, very fast: about 2,400 turns per minute. Much faster than a helicopter on Earth!" },
+        { "texto": "1.8 kg" }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Perseverance, in Jezero Crater, looks at Ingenuity, which is already on the ground.",
+      "textos": [
+        { "texto": "February 2021. Perseverance lands in Jezero Crater. Weeks later, it carefully sets Ingenuity down on the ground." },
+        { "quien": "Perseverance", "texto": "You'll be safe here, little one." },
+        { "quien": "Ingenuity", "texto": "Thanks! Now it's my turn." }
+      ]
+    },
+    "p2-v1": {
+      "alt": "At night, under a starry sky, Ingenuity shivers next to a thermometer showing it is extremely cold.",
+      "textos": [
+        { "texto": "Nights on Mars are freezing: as cold as 90 degrees below zero (Celsius). Ingenuity had to use energy to keep warm." },
+        { "quien": "Ingenuity", "texto": "Brrr, so cold!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "Ingenuity's rotors spin so fast they look blurry and kick up dust from the ground.",
+      "textos": [
+        { "texto": "April 19, 2021. The rotors spin faster and faster…" },
+        { "quien": "Ingenuity", "texto": "Here I go!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Ingenuity hovers 3 meters above the ground, over its shadow, while Perseverance watches from afar.",
+      "textos": [
+        { "texto": "It rose 3 meters, hovered for about 30 seconds and landed again! It was the first powered, controlled flight on another planet." },
+        { "quien": "Perseverance", "texto": "It's flying!" },
+        { "texto": "3 m" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "A photo of Ingenuity's shadow on the Martian ground, and Earth celebrating with one arm raised.",
+      "textos": [
+        { "texto": "Ingenuity even took a photo of its own shadow on the Martian ground." },
+        { "quien": "Earth", "texto": "Ingenuity is flying! We did it!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Ingenuity flies over hills and rocks; below, Perseverance follows a dotted path.",
+      "textos": [
+        { "texto": "Ingenuity kept flying and became a scout: from the air, it looked for good routes for Perseverance." },
+        { "quien": "Ingenuity", "texto": "There's a good path this way!" }
+      ]
+    },
+    "p3-v2": {
+      "alt": "A bar chart: a very short bar for the 5 planned flights and a very tall one for the 72 flights completed.",
+      "textos": [
+        { "texto": "It was supposed to make only 5 test flights. It made 72 in almost three years!" },
+        { "texto": "5 planned" },
+        { "texto": "72 flights!" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "A tired-looking Ingenuity next to a broken piece of one of its blades lying on the ground.",
+      "textos": [
+        { "texto": "January 2024. On its 72nd flight, one of its blades was damaged. It could not fly anymore." },
+        { "quien": "Ingenuity", "texto": "I don't think I can fly anymore…" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "At sunset, with a bluish Sun, Ingenuity rests on Mars; outlines of future helicopters appear in the sky.",
+      "textos": [
+        { "texto": "Ingenuity stayed on Mars. It proved that flying on another planet is possible and opened the way for new helicopter explorers." },
+        { "quien": "Ingenuity", "texto": "Goodbye, Mars! Mission accomplished!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "Over its 72 flights, Ingenuity flew for more than 2 hours in total and traveled about 17 kilometers.",
+    "preguntaAula": "If you had to design a helicopter for another planet, what would you change depending on its air?",
+    "fuentes": [
+      { "titulo": "NASA: Ingenuity helicopter", "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity/" },
+      { "titulo": "NASA: Perseverance rover", "url": "https://science.nasa.gov/mission/mars-2020-perseverance/" }
+    ]
+  }
+}

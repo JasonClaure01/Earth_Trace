@@ -1,0 +1,76 @@
+{
+  "paginas": ["El gran viaje", "Dos exploradores, dos misiones", "Un legado en Marte"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "Dos cohetes despegan desde la Tierra hacia el espacio; dentro de cada uno viaja un rover.",
+      "textos": [{ "texto": "Año 2003. La NASA lanza dos misiones gemelas para explorar Marte. Spirit y Opportunity comienzan su largo viaje." }]
+    },
+    "p1-v2": {
+      "alt": "Spirit, con detalles naranjas, y Opportunity, con detalles verde azulado, se sonríen dentro de la nave.",
+      "textos": [
+        { "quien": "Spirit", "texto": "¡Hola, hermano! Estoy emocionado por llegar a Marte." },
+        { "quien": "Opportunity", "texto": "¡Yo también, Spirit! Vamos a descubrir muchas cosas." }
+      ]
+    },
+    "p1-v3": {
+      "alt": "Una sonda baja en paracaídas sobre Marte mientras un racimo de bolsas de aire rebota en el suelo.",
+      "textos": [{ "texto": "Enero de 2004. Cada rover llegó envuelto en bolsas de aire que rebotaron sobre el suelo hasta detenerse." }]
+    },
+    "p1-v4": {
+      "alt": "Los dos rovers, felices, sobre el suelo rojo de Marte con montañas al fondo.",
+      "textos": [
+        { "quien": "Spirit", "texto": "¡Lo logramos! ¡Estamos en Marte!" },
+        { "quien": "Opportunity", "texto": "¡Mira qué rojo es todo! ¡A explorar!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "El brazo robótico de Opportunity examina una roca formada por capas; una lupa muestra las capas de cerca.",
+      "textos": [{ "texto": "Opportunity encontró rocas en capas y pequeñas esferas de hematita: pistas de que hace mucho tiempo hubo agua." }]
+    },
+    "p2-v2": {
+      "alt": "Spirit a lo lejos y Opportunity en primer plano, cada uno en una zona distinta de Marte.",
+      "textos": [
+        { "quien": "Spirit", "texto": "Estoy en el cráter Gusev, al otro lado de Marte." },
+        { "quien": "Opportunity", "texto": "¡Y yo sigo buscando pistas de agua!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Un remolino de polvo gira detrás de Spirit, que tiene los paneles solares cubiertos de polvo.",
+      "textos": [{ "quien": "Spirit", "texto": "¡Uf, cuánto polvo! Mis paneles solares están sucios y tengo menos energía." }]
+    },
+    "p2-v4": {
+      "alt": "Un calendario con muchos días tachados junto a los dos rovers en Marte.",
+      "textos": [
+        { "texto": "La misión estaba pensada para unos 90 días marcianos. Spirit funcionó más de 6 años y Opportunity, ¡más de 14!" },
+        { "texto": "¡AÑOS!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Spirit, con las ruedas hundidas en la arena, piensa en la Tierra.",
+      "textos": [{ "texto": "En 2009, Spirit quedó atrapado en arena suave. Siguió estudiando el suelo sin moverse hasta su última señal, en 2010." }]
+    },
+    "p3-v2": {
+      "alt": "Opportunity, solo, sobre un terreno de dunas onduladas.",
+      "textos": [{ "quien": "Opportunity", "texto": "Te echaré de menos, Spirit. Seguiré explorando por los dos." }]
+    },
+    "p3-v3": {
+      "alt": "Una tormenta de polvo oscurece el cielo; Opportunity apenas se distingue.",
+      "textos": [{ "texto": "En 2018, una tormenta de polvo cubrió todo el planeta. Sin luz del Sol, Opportunity se quedó sin energía y dejó de comunicarse." }]
+    },
+    "p3-v4": {
+      "alt": "Spirit y Opportunity bajo un cielo estrellado; la Tierra los saluda desde lo alto y en el suelo hay una placa.",
+      "textos": [
+        { "texto": "Gracias a Spirit y Opportunity sabemos que en Marte hubo agua hace mucho tiempo. Su legado sigue vivo en los nuevos exploradores." },
+        { "texto": "Spirit · Opportunity" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "Opportunity recorrió más de 45 kilómetros en Marte: más que la distancia de un maratón.",
+    "preguntaAula": "¿Por qué crees que los rovers funcionaron mucho más tiempo del que estaba planeado?",
+    "fuentes": [
+      { "titulo": "NASA: misión Opportunity", "url": "https://science.nasa.gov/mission/mer-opportunity/" },
+      { "titulo": "NASA: misión Spirit", "url": "https://science.nasa.gov/mission/mer-spirit/" }
+    ]
+  }
+}

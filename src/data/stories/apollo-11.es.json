@@ -1,0 +1,94 @@
+{
+  "paginas": ["Rumbo a la historia", "El primer paso", "El regreso a casa"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "Tres astronautas con traje espacial, uno saludando, delante de una ventana por la que se ve un cohete.",
+      "textos": [
+        { "texto": "Julio de 1969. Neil Armstrong, Buzz Aldrin y Michael Collins se preparan para viajar a la Luna." }
+      ]
+    },
+    "p1-v2": {
+      "alt": "El gigantesco cohete Saturno V despega junto a su torre de lanzamiento, entre nubes de humo.",
+      "textos": [
+        { "texto": "16 de julio. El enorme cohete Saturno V despega desde el Centro Espacial Kennedy, en Florida." }
+      ]
+    },
+    "p1-v3": {
+      "alt": "La nave Columbia, unida al módulo lunar Eagle, viaja de la Tierra hacia la Luna siguiendo una órbita de puntos.",
+      "textos": [
+        { "texto": "Su objetivo: llevar personas a la Luna y traerlas de vuelta a salvo. El 19 de julio entran en órbita lunar." }
+      ]
+    },
+    "p1-v4": {
+      "alt": "El Columbia queda en el espacio mientras el módulo Eagle baja hacia la superficie lunar con el motor encendido.",
+      "textos": [
+        { "texto": "20 de julio. Armstrong y Aldrin bajan hacia la Luna en el módulo Eagle. Collins se queda en órbita en el Columbia." },
+        { "quien": "Columbia", "texto": "¡Buena suerte, Eagle! Aquí te espero." },
+        { "quien": "Eagle", "texto": "¡Allá vamos!" }
+      ]
+    },
+    "p2-v1": {
+      "alt": "El Eagle baja con el motor encendido sobre una zona llena de rocas; una flecha señala un lugar más despejado.",
+      "textos": [
+        { "texto": "Al bajar, vieron que iban hacia una zona llena de rocas. Armstrong tomó el control y buscó un lugar más seguro." },
+        { "quien": "Eagle", "texto": "¡Me queda poco combustible!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "El Eagle, sonriente, ya posado sobre el suelo gris de la Luna; la Tierra se ve en el cielo.",
+      "textos": [
+        { "texto": "20 de julio de 1969. ¡El Eagle se posó en el Mar de la Tranquilidad!" },
+        { "quien": "Eagle", "texto": "¡El Eagle ha aterrizado!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Un astronauta junto a la escalera del módulo lunar; a la derecha, una huella de bota marcada en el suelo.",
+      "textos": [
+        { "texto": "Horas después, Neil Armstrong bajó por la escalera y fue el primer ser humano en pisar la Luna." },
+        { "quien": "Neil Armstrong", "texto": "Es un pequeño paso para un hombre, un gran salto para la humanidad." }
+      ]
+    },
+    "p2-v4": {
+      "alt": "Un astronauta con una cámara y otro arrodillado recogiendo muestras, junto a dos instrumentos y el Eagle al fondo; en un círculo, el Columbia en órbita.",
+      "textos": [
+        { "texto": "Buzz Aldrin se unió a él. Juntos tomaron fotos, recogieron muestras e instalaron instrumentos: un sismógrafo y un espejo para medir con láser la distancia a la Tierra." },
+        { "texto": "Mientras tanto, Collins daba vueltas a la Luna en el Columbia." }
+      ]
+    },
+    "p3-v1": {
+      "alt": "La parte de arriba del Eagle despega con una llama; la parte de abajo se queda en el suelo lunar.",
+      "textos": [
+        { "texto": "21 de julio. Armstrong y Aldrin despegaron en la parte de arriba del Eagle. La parte de abajo se quedó en la Luna." },
+        { "quien": "Eagle", "texto": "¡Hasta pronto, Luna!" }
+      ]
+    },
+    "p3-v2": {
+      "alt": "El Eagle se acopla al morro del Columbia sobre la Luna.",
+      "textos": [
+        { "texto": "Se reunieron con Collins en el Columbia y pasaron las muestras: ¡21,5 kilos de rocas y suelo lunar!" },
+        { "quien": "Columbia", "texto": "¡Bienvenidos de vuelta!" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "La cápsula entra en la atmósfera de la Tierra dejando una estela de fuego.",
+      "textos": [
+        { "texto": "Tras dos días y medio de viaje, llegaron a la Tierra. Al entrar en la atmósfera, la cápsula se calentó muchísimo: ¡parecía una bola de fuego!" },
+        { "quien": "Columbia", "texto": "¡Uf, qué calor!" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "La cápsula flota en el mar bajo tres paracaídas de rayas; cerca hay un barco y un helicóptero de rescate.",
+      "textos": [
+        { "texto": "24 de julio. El Columbia cayó en el océano Pacífico. ¡Los tres astronautas regresaron a salvo!" },
+        { "texto": "¡SPLASH!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "Al volver, los astronautas pasaron más de dos semanas en cuarentena por si traían microbios de la Luna. ¡Neil Armstrong celebró allí su cumpleaños número 39, el 5 de agosto de 1969!",
+    "preguntaAula": "¿Qué crees que fue lo más difícil de viajar a la Luna y volver?",
+    "fuentes": [
+      { "titulo": "NASA: misión Apollo 11", "url": "https://www.nasa.gov/mission/apollo-11/" }
+    ]
+  }
+}

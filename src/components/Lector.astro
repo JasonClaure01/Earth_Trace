@@ -1,0 +1,171 @@
+---
+// Lector de cómic (RF-05 a RF-08): 3 páginas × 4 viñetas, scroll suave, texto superpuesto por idioma.
+// Sin JavaScript se leen las 12 viñetas completas, en orden, con todo su texto (CA-05.2).
+import "../styles/lector.css";
+import { t, otherLang, type Lang } from "../i18n/ui";
+import { destino, historia, historiasDe, urlHistoria, urlPortada } from "../data/catalog";
+import { cargarHistoria } from "../lib/stories";
+import Tarjeta from "./Tarjeta.astro";
+
+interface Props { lang: Lang; id: string }
+const { lang, id } = Astro.props;
+const tx = t(lang);
+const other = otherLang(lang);
+const { entrada, arte, textos } = cargarHistoria(id);
+const texto = textos[lang];
+const dest = destino(entrada.destino);
+
+// Escalonado de lectura (SPEC §10): cada texto aparece cuando ha dado tiempo a leer el anterior.
+const retardos = (lista: { texto: string }[]) => {
+  let d = 350;
+  return lista.map(tt => { const actual = d; d += Math.min(3200, Math.max(900, tt.texto.length * 38)); return actual; });
+};
+// Tamaño de letra proporcional al dibujo: 15 px a tamaño original de la viñeta.
+const FS_BASE = 15;
+
+const paginas = [0, 1, 2].map(p => ({
+  titulo: texto.paginas[p],
+  vinetas: arte.vinetas.slice(p * 4, p * 4 + 4).map(v => {
+    const vw = Number(v.svg.match(/viewBox="[^ ]+ [^ ]+ ([\d.]+)/)![1]);
+    const tv = texto.vinetas[v.id];
+    const ds = retardos(tv.textos);
+    return {
+      ...v,
+      alt: tv.alt,
+      ancha: v.ratio > 1.5,
+      fs: (FS_BASE / vw) * 100,
+      huecos: v.huecos.map((h, i) => ({ ...h, ...tv.textos[i], retardo: ds[i] })),
+    };
+  }),
+}));
+
+const delDestino = historiasDe(entrada.destino);
+const idx = delDestino.findIndex(h => h.id === id);
+const siguiente = delDestino[idx + 1] ?? delDestino.find(h => h.id !== id);
+const relacionadas = entrada.relacionadas.map(r => historia(r)!).filter(h => h && h.id !== siguiente?.id);
+const otraUrl = urlHistoria(other, entrada);
+---
+<Fragment set:html={arte.defs} />
+
+<header class="barra barra--lector">
+  <a class="chip-btn" href={urlPortada(lang)} data-volver>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.4 5.4 14 4l-8 8 8 8 1.4-1.4L8.8 12z"/></svg>
+    <span>{tx.backToSpace}</span>
+  </a>
+  <span class="barra__titulo" aria-hidden="true">{entrada.subtitulo[lang]}</span>
+  <span class="barra__spacer"></span>
+  <a class="chip-btn" href={otraUrl} hreflang={other} lang={other} data-lang-switch>
+    <span aria-hidden="true">{tx.otherLangShort}</span><span class="sr-only">{tx.switchLang}</span>
+  </a>
+  <button class="chip-btn solo-js" type="button" data-pref="sinAnim" aria-pressed="false" data-label-on={tx.playAnim} data-label-off={tx.pauseAnim}>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h4v14H7zm6 0h4v14h-4z"/></svg>
+    <span class="chip-btn__texto" data-label>{tx.pauseAnim}</span>
+  </button>
+  <button class="chip-btn solo-js" type="button" data-pref="sencilla" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"/></svg>
+    <span class="chip-btn__texto">{tx.simpleReading}</span>
+  </button>
+</header>
+
+<main id="contenido" class="lector" data-lector data-portada={urlPortada(lang)}>
+  <div class="lector__intro">
+    <p class="lector__sub">{entrada.subtitulo[lang]} · {entrada.anio}</p>
+    <h1 class="lector__titulo">{entrada.titulo[lang]}</h1>
+    <p class="lector__ayuda solo-js">{tx.keyboardHelp}</p>
+  </div>
+
+  {paginas.map((pg, p) => (
+    <section class="pagina" aria-labelledby={`pagina-${p + 1}`}>
+      <h2 class="pagina__titulo" id={`pagina-${p + 1}`}><span>{tx.page} {p + 1}</span> {pg.titulo}</h2>
+      {pg.vinetas.map(v => (
+        <figure
+          class:list={["vineta", { "vineta--ancha": v.ancha }]}
+          id={v.id}
+          tabindex="-1"
+          data-vineta
+          style={`--ratio:${v.ratio.toFixed(4)};--fs:${v.fs.toFixed(3)}cqi`}
+        >
+          <div class="vineta__lienzo">
+            <div class="vineta__arte" role="img" aria-label={v.alt} set:html={v.svg} />
+            <div class="huecos">
+              {v.huecos.map(h => (
+                <p
+                  class={`hueco hueco--${h.tipo}`}
+                  style={`--x:${h.x}%;--y:${h.y}%;--w:${h.w}%;--h:${h.h}%;--d:${h.retardo}ms`}
+                >
+                  {h.quien && <span class="hueco__quien">{h.quien}<span class="sr-only">:</span> </span>}
+                  <span class="hueco__texto">{h.texto}</span>
+                </p>
+              ))}
+            </div>
+          </div>
+        </figure>
+      ))}
+    </section>
+  ))}
+
+  <section class="cierre" id="cierre" aria-labelledby="titulo-cierre">
+    <h2 id="titulo-cierre">{tx.closingTitle}</h2>
+    <div class="cierre__bloque cierre__dato">
+      <h3>{tx.realFact}</h3>
+      <p>{texto.cierre.datoReal}</p>
+    </div>
+    <div class="cierre__bloque cierre__pregunta">
+      <h3>{tx.classQuestion}</h3>
+      <p>{texto.cierre.preguntaAula}</p>
+    </div>
+    <p class="cierre__aviso">{tx.disclaimer}</p>
+    <div class="cierre__fuentes">
+      <h3>{tx.sources}</h3>
+      <ul>
+        {texto.cierre.fuentes.map(f => (
+          <li><a href={f.url} rel="noopener noreferrer" hreflang="en">{f.titulo}</a> {tx.sourceLangNote}</li>
+        ))}
+      </ul>
+    </div>
+    <div class="cierre__nav">
+      {siguiente && (
+        <div>
+          <h3>{tx.nextStory}</h3>
+          <ul class="lista-tarjetas"><li><Tarjeta lang={lang} h={siguiente} /></li></ul>
+        </div>
+      )}
+      {relacionadas.length > 0 && (
+        <div>
+          <h3>{tx.related}</h3>
+          <ul class="lista-tarjetas">{relacionadas.map(h => <li><Tarjeta lang={lang} h={h} /></li>)}</ul>
+        </div>
+      )}
+      <a class="chip-btn chip-btn--grande" href={urlPortada(lang)}>{tx.backToSpace}</a>
+    </div>
+  </section>
+</main>
+
+<nav class="progreso solo-js" aria-label={tx.progress}>
+  <button class="progreso__flecha" type="button" data-anterior aria-label={tx.prev}>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 8-6 6 1.4 1.4 4.6-4.6 4.6 4.6L18 14z"/></svg>
+  </button>
+  <ol class="progreso__paginas">
+    {paginas.map((pg, p) => (
+      <li class="progreso__pagina">
+        <ol>
+          {pg.vinetas.map((v, i) => (
+            <li><a class="progreso__punto" href={`#${v.id}`} data-punto={v.id} aria-label={`${tx.page} ${p + 1}, ${tx.panel.toLowerCase()} ${i + 1}`}></a></li>
+          ))}
+        </ol>
+      </li>
+    ))}
+  </ol>
+  <button class="progreso__flecha" type="button" data-siguiente aria-label={tx.next}>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 16 6-6-1.4-1.4-4.6 4.6-4.6-4.6L6 10z"/></svg>
+  </button>
+</nav>
+
+<footer class="pie">
+  <p>{tx.footerPrivacy}</p>
+  <p>{tx.footerNasa}</p>
+</footer>
+
+<script>
+  import "../scripts/lector.ts";
+</script>

@@ -1,0 +1,31 @@
+---
+// Raíz: español por defecto, sin redirección automática por idioma del navegador (D-07).
+// Si la persona ya eligió idioma en este navegador, se respeta.
+import "../styles/base.css";
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viaje al espacio profundo · Journey to Deep Space</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" hreflang="es" href="/es/" />
+    <link rel="alternate" hreflang="en" href="/en/" />
+    <link rel="alternate" hreflang="x-default" href="/es/" />
+    <script is:inline>
+      (function () {
+        var lang = "es";
+        try { lang = JSON.parse(localStorage.getItem("vep-prefs") || "{}").lang === "en" ? "en" : "es"; } catch (e) {}
+        location.replace("/" + lang + "/");
+      })();
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=/es/" /></noscript>
+  </head>
+  <body>
+    <main class="raiz">
+      <p><a href="/es/" hreflang="es">Viaje al espacio profundo (español)</a></p>
+      <p><a href="/en/" hreflang="en" lang="en">Journey to Deep Space (English)</a></p>
+    </main>
+  </body>
+</html>

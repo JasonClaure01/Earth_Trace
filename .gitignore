@@ -1,0 +1,31 @@
+# Dependencias y compilación
+node_modules/
+dist/
+.astro/
+
+# Arte generado por `npm run art` (se regenera en dev y build)
+src/art/*.json
+art_codigo/
+
+# Referencias originales y pruebas de la opción "editar" (no las usa la web)
+resources/
+resources_sin_texto/
+
+# Documentos de trabajo (no se publican)
+eval.md
+PROMPTS.md
+SPEC.md
+tools/strip-text.mjs
+tools/cover-boxes.mjs
+tools/config/
+
+# Sistema, editor y entorno
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+.env
+.env.*

@@ -1,0 +1,19 @@
+{
+  "name": "viaje-espacio-profundo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "art": "node tools/draw/build-art.mjs",
+    "dev": "npm run art && astro dev",
+    "build": "npm run art && astro build && node tools/check-budget.mjs",
+    "preview": "astro preview",
+    "check:fit": "node tools/check-fit.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.12"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1"
+  }
+}

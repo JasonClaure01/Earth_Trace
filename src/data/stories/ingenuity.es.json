@@ -1,0 +1,102 @@
+{
+  "paginas": ["Un pasajero muy especial", "El primer vuelo", "Un explorador de récord"],
+  "vinetas": {
+    "p1-v1": {
+      "alt": "El rover Perseverance y el pequeño helicóptero Ingenuity viajan juntos por el espacio hacia Marte.",
+      "textos": [
+        { "texto": "Julio de 2020. El rover Perseverance despega hacia Marte. Lleva un pasajero escondido bajo su panza: el helicóptero Ingenuity." },
+        { "quien": "Ingenuity", "texto": "¡Qué emoción! ¡Vamos a Marte!" }
+      ]
+    },
+    "p1-v2": {
+      "alt": "Dos frascos de aire: el de la Tierra está lleno de bolitas y el de Marte casi vacío. Ingenuity los mira desde abajo.",
+      "textos": [
+        { "texto": "Volar en Marte es muy difícil: su aire es unas 100 veces menos denso que el de la Tierra." },
+        { "quien": "Ingenuity", "texto": "¡Casi no hay aire que empujar!" },
+        { "texto": "Tierra" },
+        { "texto": "Marte" }
+      ]
+    },
+    "p1-v3": {
+      "alt": "Ingenuity de cerca: dos hélices, una encima de otra, con flechas que muestran que giran en sentidos opuestos; a su lado, una báscula.",
+      "textos": [
+        { "texto": "Por eso Ingenuity es muy ligero y sus dos hélices giran en sentidos opuestos, muy rápido: unas 2.400 vueltas por minuto. ¡Mucho más que un helicóptero de la Tierra!" },
+        { "texto": "1,8 kg" }
+      ]
+    },
+    "p1-v4": {
+      "alt": "Perseverance, en el cráter Jezero, mira a Ingenuity, que ya está en el suelo.",
+      "textos": [
+        { "texto": "Febrero de 2021. Perseverance aterriza en el cráter Jezero. Semanas después, deja a Ingenuity con cuidado sobre el suelo." },
+        { "quien": "Perseverance", "texto": "Aquí estarás bien, pequeño." },
+        { "quien": "Ingenuity", "texto": "¡Gracias! Ahora me toca a mí." }
+      ]
+    },
+    "p2-v1": {
+      "alt": "De noche, bajo un cielo estrellado, Ingenuity tirita junto a un termómetro que marca muchísimo frío.",
+      "textos": [
+        { "texto": "Las noches en Marte son heladas: hasta 90 grados bajo cero. Ingenuity tenía que usar energía para mantenerse caliente." },
+        { "quien": "Ingenuity", "texto": "¡Brrr, qué frío!" }
+      ]
+    },
+    "p2-v2": {
+      "alt": "Las hélices de Ingenuity giran tan rápido que se ven borrosas y levantan polvo del suelo.",
+      "textos": [
+        { "texto": "19 de abril de 2021. Las hélices giran cada vez más rápido…" },
+        { "quien": "Ingenuity", "texto": "¡Allá voy!" }
+      ]
+    },
+    "p2-v3": {
+      "alt": "Ingenuity flota a 3 metros del suelo, sobre su sombra, mientras Perseverance lo mira desde lejos.",
+      "textos": [
+        { "texto": "¡Subió 3 metros, flotó unos 30 segundos y volvió a posarse! Fue el primer vuelo propulsado y controlado en otro planeta." },
+        { "quien": "Perseverance", "texto": "¡Está volando!" },
+        { "texto": "3 m" }
+      ]
+    },
+    "p2-v4": {
+      "alt": "Una foto de la sombra de Ingenuity sobre el suelo de Marte, y la Tierra celebrando con un brazo en alto.",
+      "textos": [
+        { "texto": "Ingenuity hasta tomó una foto de su propia sombra sobre el suelo de Marte." },
+        { "quien": "La Tierra", "texto": "¡Ingenuity vuela! ¡Lo logramos!" }
+      ]
+    },
+    "p3-v1": {
+      "alt": "Ingenuity vuela sobre colinas y rocas; abajo, Perseverance sigue un camino de puntos.",
+      "textos": [
+        { "texto": "Ingenuity siguió volando y se convirtió en explorador: desde el aire buscaba buenos caminos para Perseverance." },
+        { "quien": "Ingenuity", "texto": "¡Por aquí hay buen camino!" }
+      ]
+    },
+    "p3-v2": {
+      "alt": "Un gráfico de barras: una barra muy baja para los 5 vuelos previstos y otra muy alta para los 72 vuelos logrados.",
+      "textos": [
+        { "texto": "Iba a hacer solo 5 vuelos de prueba. ¡Hizo 72 en casi tres años!" },
+        { "texto": "5 previstos" },
+        { "texto": "¡72 vuelos!" }
+      ]
+    },
+    "p3-v3": {
+      "alt": "Ingenuity, con cara de cansancio, junto a un trozo roto de una de sus palas tirado en el suelo.",
+      "textos": [
+        { "texto": "Enero de 2024. En su vuelo número 72, una de sus palas se dañó. Ya no podía volar más." },
+        { "quien": "Ingenuity", "texto": "Creo que ya no puedo volar…" }
+      ]
+    },
+    "p3-v4": {
+      "alt": "Al atardecer, con un Sol azulado, Ingenuity descansa en Marte; en el cielo se ven siluetas de futuros helicópteros.",
+      "textos": [
+        { "texto": "Ingenuity se quedó en Marte. Demostró que se puede volar en otro planeta y abrió el camino a nuevos helicópteros exploradores." },
+        { "quien": "Ingenuity", "texto": "¡Adiós, Marte! ¡Misión cumplida!" }
+      ]
+    }
+  },
+  "cierre": {
+    "datoReal": "En sus 72 vuelos, Ingenuity voló más de 2 horas en total y recorrió unos 17 kilómetros.",
+    "preguntaAula": "Si tuvieras que diseñar un helicóptero para otro planeta, ¿qué cambiarías según cómo sea su aire?",
+    "fuentes": [
+      { "titulo": "NASA: helicóptero Ingenuity", "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity/" },
+      { "titulo": "NASA: rover Perseverance", "url": "https://science.nasa.gov/mission/mars-2020-perseverance/" }
+    ]
+  }
+}
