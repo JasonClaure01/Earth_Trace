@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earth Trace · Presentación</title>
+<style>
+  :root{
+    --naranja:#F08A35; --crema:#F6E7CB; --ink:#F5F3FF;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:var(--font);color:var(--ink);background:#05060F;overflow:hidden}
+
+  .deck{position:relative;height:100vh;width:100vw}
+  .slide{
+    position:absolute;inset:0;display:none;
+    align-items:flex-end;justify-content:flex-start;
+    opacity:0;transition:opacity .6s ease;
+    background-size:cover;background-position:center;background-repeat:no-repeat;
+  }
+  .slide.activa{display:flex;opacity:1}
+  /* velo oscuro para que el titulo se lea sobre la imagen */
+  .slide::before{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(5,6,15,.35) 0%, rgba(5,6,15,.2) 38%, rgba(5,6,15,.82) 72%, rgba(5,6,15,.97) 100%);
+  }
+  .cap{position:relative;z-index:1;padding:0 7vw 10vh;max-width:90%}
+  .kicker{color:var(--naranja);font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:clamp(12px,1.5vw,18px);margin-bottom:12px;text-shadow:0 2px 12px #000}
+  h1{font-weight:900;font-style:italic;text-transform:uppercase;line-height:.92;font-size:clamp(48px,9vw,120px);text-shadow:0 4px 30px rgba(0,0,0,.8)}
+  h1 .e{color:var(--crema)} h1 .t{color:var(--naranja);border-bottom:.07em solid var(--crema);padding-bottom:.04em}
+  h2{font-weight:900;font-size:clamp(34px,6vw,78px);line-height:1.02;text-shadow:0 3px 24px rgba(0,0,0,.85);max-width:16ch}
+  h2 em{color:var(--naranja);font-style:normal}
+  .quote{font-weight:900;font-style:italic;font-size:clamp(30px,5.2vw,68px);line-height:1.15;color:var(--crema);text-shadow:0 3px 24px rgba(0,0,0,.9);max-width:17ch}
+  .quote small{display:block;margin-top:16px;font-style:normal;font-size:clamp(14px,1.8vw,22px);font-weight:700;color:var(--naranja)}
+  .sub{margin-top:14px;font-size:clamp(16px,2.1vw,26px);color:#cfd4e6;max-width:26ch;text-shadow:0 2px 14px #000}
+
+  /* slide de misiones: mosaico */
+  .mosaico{position:relative;z-index:1;width:100%;height:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .mosaico img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05)}
+  .mosaico .lbl{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 7vw 8vh;background:linear-gradient(180deg,transparent,rgba(5,6,15,.9))}
+
+  /* HUD */
+  .hud{position:fixed;z-index:5;bottom:20px;right:24px;display:flex;align-items:center;gap:12px;color:#cfd4e6;font-size:14px}
+  .hud button{background:rgba(14,20,48,.8);border:1px solid rgba(240,138,53,.4);color:var(--ink);width:46px;height:46px;border-radius:50%;font-size:22px;cursor:pointer;transition:transform .15s}
+  .hud button:hover{transform:scale(1.1);border-color:var(--naranja)}
+  .cont{font-variant-numeric:tabular-nums;min-width:48px;text-align:center;text-shadow:0 1px 6px #000}
+  .barra{position:fixed;z-index:5;top:0;left:0;height:4px;background:var(--naranja);width:0;transition:width .5s ease}
+  .ayuda{position:fixed;z-index:5;bottom:22px;left:24px;color:#aeb4cc;font-size:13px;opacity:.65;text-shadow:0 1px 6px #000}
+</style>
+</head>
+<body>
+<div class="barra" id="barra"></div>
+<div class="deck" id="deck">
+
+  <!-- 1. PORTADA -->
+  <section class="slide" style="background-image:url('img/comic-03.jpeg')">
+    <div class="cap">
+      <div class="kicker">NASA Space Apps 2026 · Cochabamba</div>
+      <h1><span class="e">EARTH</span> <span class="t">TRACE</span></h1>
+      <p class="sub">Las máquinas que dejamos en la Luna y Marte… cuentan su historia.</p>
+    </div>
+  </section>
+
+  <!-- 2. EL RETO -->
+  <section class="slide" style="background-image:url('img/comic-02.jpeg')">
+    <div class="cap">
+      <div class="kicker">El desafío</div>
+      <h2>Abandoned, <em>but not Forgotten</em></h2>
+    </div>
+  </section>
+
+  <!-- 3. LA IDEA -->
+  <section class="slide" style="background-image:url('img/comic-01.jpeg')">
+    <div class="cap">
+      <div class="kicker">Nuestra idea</div>
+      <h2>Cada nave <em>es el narrador</em> de su propio cómic</h2>
+    </div>
+  </section>
+
+  <!-- 4. EL GANCHO -->
+  <section class="slide" style="background-image:url('img/comic-06.jpeg')">
+    <div class="cap">
+      <p class="quote">“Mi batería está baja y está oscureciendo.”
+        <small>— última transmisión del rover Opportunity</small></p>
+    </div>
+  </section>
+
+  <!-- 5. LAS MISIONES (mosaico) -->
+  <section class="slide">
+    <div class="mosaico">
+      <img src="img/comic-01.jpeg" alt="Surveyor 3">
+      <img src="img/comic-04.jpeg" alt="Apolo 11">
+      <img src="img/comic-07.jpeg" alt="Apolo 12">
+      <img src="img/comic-10.jpeg" alt="Apolo 15">
+      <div class="lbl"><div class="kicker">El contenido</div><h2>Misiones reales, <em>ciencia real</em></h2></div>
+    </div>
+  </section>
+
+  <!-- 6. POR QUÉ FUNCIONA -->
+  <section class="slide" style="background-image:url('img/comic-09.jpeg')">
+    <div class="cap">
+      <div class="kicker">Por qué funciona</div>
+      <h2>Emoción + <em>dato NASA</em> + aula</h2>
+      <p class="sub">Bilingüe ES/EN · accesible · abre en cualquier navegador.</p>
+    </div>
+  </section>
+
+  <!-- 7. CIERRE -->
+  <section class="slide" style="background-image:url('img/comic-12.jpeg')">
+    <div class="cap">
+      <p class="quote">Siguen ahí, esperando a la próxima generación.</p>
+      <p class="sub" style="color:var(--naranja);font-weight:800;margin-top:20px">EARTH TRACE · Space Apps Cochabamba 2026</p>
+    </div>
+  </section>
+
+</div>
+
+<div class="hud">
+  <button id="prev" aria-label="Anterior">‹</button>
+  <span class="cont"><span id="actual">1</span> / <span id="total">7</span></span>
+  <button id="next" aria-label="Siguiente">›</button>
+</div>
+<div class="ayuda">Flechas ← → o Espacio · F pantalla completa</div>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  let i=0; const total=slides.length;
+  document.getElementById('total').textContent=total;
+  const barra=document.getElementById('barra'), actual=document.getElementById('actual');
+  function ir(n){
+    i=Math.max(0,Math.min(total-1,n));
+    slides.forEach((s,k)=>s.classList.toggle('activa',k===i));
+    actual.textContent=i+1;
+    barra.style.width=((i+1)/total*100)+'%';
+  }
+  const next=()=>ir(i+1), prev=()=>ir(i-1);
+  document.getElementById('next').onclick=next;
+  document.getElementById('prev').onclick=prev;
+  addEventListener('keydown',e=>{
+    if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();next();}
+    else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();prev();}
+    else if(e.key==='Home'){ir(0);} else if(e.key==='End'){ir(total-1);}
+    else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+  });
+  document.getElementById('deck').addEventListener('click',e=>{
+    if(e.target.closest('.hud'))return;
+    (e.clientX>innerWidth/2)?next():prev();
+  });
+  ir(0);
+</script>
+</body>
+</html>
